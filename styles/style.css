@@ -22,6 +22,25 @@ html {
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+blockquote,
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
 .content {
   display: grid;
   align-items: flex-end;
@@ -42,15 +61,11 @@ html {
   min-height: 456px;
 }
 
-.content__details {
-  margin-left: 15px;
-  grid-area: details;
-  width: 399px;
-  max-height: 100%;
-}
-
 .result__video {
-  width: 100%;
+  width: 711px;
+  height: 386px;
+  margin-bottom: 16px;
+  object-fit: cover;
 }
 
 .search-form {
@@ -60,67 +75,90 @@ html {
   align-items: start;
   width: 711px;
   height: 54px;
-  /*column-gap: 40px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-content: start;
-  margin-top: 8px;*/
 }
 
-.content__list-container {
-  height: 399px;
-  overflow: scroll;
+.search-form__fieldset-title {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+}
+
+.content__details {
+  margin-left: 15px;
+  grid-area: details;
+  width: 399px;
+  max-height: 100%;
 }
 
 .title {
   margin-bottom: 26px;
+  font-weight: 700;
+  font-size: 75px;
+  font-family: Oswald;
+  text-transform: uppercase;
+  line-height: 93%;
 }
 
-.result__video-container {
-  width: 711px;
-  height: 386px;
-  margin-bottom: 16px;
+.content__accent {
+  color: #545050;
 }
 
-.result__video {
-  object-fit: cover;
+.content__list-container {
+  max-height: 298px;
+  max-width: 399px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
-.content__list{
+.content__list {
   display: grid;
   row-gap: 30px;
 }
 
-.content__video-card{
+.content__card-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.content__video-card {
   display: flex;
   justify-content: space-between;
   align-items: start;
 }
 
-.content__video-card-thumbnail{
+.content__video-card-description-container {
+  width: 196px;
+  height: 103px;
+}
+
+.content__video-card-title {
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 30px;
+  line-height: 26px;
+    letter-spacing: 0.6px;
+}
+
+.content__video-card-description {
+  font-size: 18px;
+  line-height: 16.2px;
+  letter-spacing: 0.5px;
+  line-height: 29px;
+  -webkit-line-clamp: 4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.content__video-card-thumbnail {
   width: 194px;
   height: 103px;
   object-fit: cover;
   object-position: center;
-}
-
-h1,
-h2,
-h3,
-h4,
-p,
-ul,
-ol,
-li,
-blockquote,
-fieldset {
-  margin: 0;
-  padding: 0;
-}
-
-ul,
-ol {
-  list-style: none;
 }
 
 /* Кастомный скроллбар */
