@@ -1,3 +1,11 @@
+/*.content__list-container {
+  position: relative;
+}
+
+.result__video-container {
+  position: relative;
+}
+*/
 .preloader {
   position: absolute;
   inset: 0;
