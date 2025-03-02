@@ -216,10 +216,6 @@ ol {
 }
 
 .content__details {
-  /*margin-left: 15px;
-  grid-area: details;
-  width: 399px;
-  max-height: 100%;*/
   grid-area: details;
   display: flex;
   flex-direction: column;
@@ -231,7 +227,6 @@ ol {
 }
 
 .title {
-  /*margin-bottom: 26px;*/
   font-weight: 700;
   font-size: 75px;
   font-family: Oswald, sans-serif;
@@ -324,7 +319,6 @@ ol {
   font-family: Fira Sans Condensed, sans-serif;
   font-size: 18px;
   font-weight: 400px;
-  line-height: 16.2px;
   line-height: 19px;
   -webkit-line-clamp: 4;
   display: -webkit-box;
