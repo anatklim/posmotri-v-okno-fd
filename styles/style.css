@@ -53,7 +53,8 @@ ol {
 
 .content {
   display: grid;
-  justify-content: center;
+  /*justify-content: start;*/
+  grid-template-columns: 711px 399px;
   align-items: end;
   gap: 30px;
   width: 1140px;
@@ -210,9 +211,10 @@ ol {
 
 .search-form__submit-button {
   height: 34px;
-  margin-top: 17px;
+  margin-top: 18px;
   width: 194px;
   font-weight: 600;
+  padding-top: 2px;
 }
 
 .content__details {
@@ -239,6 +241,7 @@ ol {
 }
 
 .content__list-container {
+  display: grid;
   position: relative;
   max-height: 298px;
   overflow: auto;
