@@ -141,7 +141,6 @@ ol {
   border-right: 1px solid transparent;
   background-color: transparent;
   color: #fff;
-  /*margin-top: 5px;*/
 }
 
 .search-form__textfield:focus-visible {
@@ -160,7 +159,6 @@ ol {
 .search-form__checkbox-list {
   display: flex;
   gap: 15px;
-  /*padding-top: 6px;*/
 }
 
 .search-form__checkbox:focus {
@@ -245,12 +243,12 @@ ol {
   position: relative;
   max-height: 298px;
   overflow: auto;
+  gap: 26px;
 }
 
 .content__list {
   display: grid;
   row-gap: 30px;
-  margin-bottom: 26px;
 }
 
 .content__list-item {
